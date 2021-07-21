@@ -6,7 +6,7 @@
     <title>Unity WebGL Player | 3D Orbit</title>
   </head>
   <body style="text-align: center">
-    <canvas id="unity-canvas" width=640 height=640 style="width: device-width; height: device-width; background: #231F20"></canvas>
+    <canvas id="unity-canvas" width=640 height=640 style="width: 1080px; height: 1080px; background: #231F20"></canvas>
     <script src="Build/0.2.2.loader.js"></script>
     <script>
       createUnityInstance(document.querySelector("#unity-canvas"), {
@@ -18,7 +18,7 @@
         productName: "3D Orbit",
         productVersion: "0.2.1",
         matchWebGLToCanvasSize: true, // Uncomment this to separately control WebGL canvas render size and DOM element size.
-        devicePixelRatio: 0.8, // Uncomment this to override low DPI rendering on high DPI displays.
+        devicePixelRatio: 0.6, // Uncomment this to override low DPI rendering on high DPI displays.
       });
     </script>
   </body>
