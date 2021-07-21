@@ -6,13 +6,13 @@
     <title>Unity WebGL Player | 3D Orbit</title>
   </head>
   <body style="text-align: center">
-    <canvas id="unity-canvas" width=200 height=200 style="width: 100%; height: 100%; background: #231F20"></canvas>
+    <canvas id="unity-canvas" width=640 height=640 style="width: 100%; height: 100%; background: #231F20"></canvas>
     <script>
         var canvasWidth = innerWidth;
         var canvasHeight = innerHeight;
         var canvasRatio = canvasWidth / canvasHeight;
-        document.getElementById("unity-canvas").width = 800 * canvasRatio;
-        document.getElementById("unity-canvas").height = 800;
+        document.getElementById("unity-canvas").width = 640 * canvasRatio;
+        document.getElementById("unity-canvas").height = 640;
         document.getElementById("unity-canvas").style.width = canvasWidth - 20 + "px";
         document.getElementById("unity-canvas").style.height = canvasHeight - 20 + "px";
     </script>
