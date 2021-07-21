@@ -10,8 +10,9 @@
     <script>
         var canvasWidth = innerWidth;
         var canvasHeight = innerHeight;
-        document.getElementById("unity-canvas").canvasWidth = 400;
-        document.getElementById("unity-canvas").canvasWidth = 200;
+        var canvasRatio = canvasWidth / canvasHeight;
+        document.getElementById("unity-canvas").width = 800 + "px";
+        document.getElementById("unity-canvas").height = 800 / canvasRatio + "px";
         document.getElementById("unity-canvas").style.width = canvasWidth - 20 + "px";
         document.getElementById("unity-canvas").style.height = canvasHeight - 20 + "px";
     </script>
