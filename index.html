@@ -3,10 +3,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>3D Orbit | 2207201330</title>
+    <title>3D Orbit | 2207201335</title>
   </head>
   <body style="text-align: center">
-    <canvas id="unity-canvas" width={{{ WIDTH }}} height={{{ HEIGHT }}} style="width: 100%; height: 100%"></canvas>
+    <canvas id="unity-canvas"></canvas>
     <script>
         var canvasWidth = innerWidth;
         var canvasHeight = innerHeight;
@@ -32,7 +32,7 @@
         productName: "3D Orbit",
         productVersion: "0.2.4",
         matchWebGLToCanvasSize: true, // Uncomment this to separately control WebGL canvas render size and DOM element size.
-        // devicePixelRatio: 1, // Uncomment this to override low DPI rendering on high DPI displays.
+        devicePixelRatio: 2, // Uncomment this to override low DPI rendering on high DPI displays.
       });
     </script>
   </body>
