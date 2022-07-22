@@ -3,14 +3,14 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>3D Orbit | 220722-1645</title>
+    <title>3D Orbit | 220722-1700</title>
   </head>
   <body style="text-align: center">
     <canvas id="unity-canvas"></canvas>
     <script>
         var canvasWidth = innerWidth;
         var canvasHeight = innerHeight;
-        document.getElementById("unity-canvas").style.width = canvasWidth - 20 + "px";
+        document.getElementById("unity-canvas").style.width = 960 + "px";
         document.getElementById("unity-canvas").style.height = canvasWidth - 20 + "px";
     </script>
     <script src="Build/v220721.loader.js"></script>
@@ -23,8 +23,8 @@
         companyName: "DefaultCompany",
         productName: "3D Orbit",
         productVersion: "0.2.4",
-        //matchWebGLToCanvasSize: true, // Uncomment this to separately control WebGL canvas render size and DOM element size.
-        //devicePixelRatio: 1, // Uncomment this to override low DPI rendering on high DPI displays.
+        // matchWebGLToCanvasSize: false, // Uncomment this to separately control WebGL canvas render size and DOM element size.
+        // devicePixelRatio: 1, // Uncomment this to override low DPI rendering on high DPI displays.
       });
     </script>
   </body>
