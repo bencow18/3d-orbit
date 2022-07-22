@@ -8,11 +8,20 @@
   <body style="text-align: center">
     <canvas id="unity-canvas"></canvas>
     <script>
-      var canvasSize = 0;
-      if (innerWidth > innerHeight) canvasSize = innerHeight - 20;
-      else canvasSize = innerWidth - 20;
-      document.getElementById("unity-canvas").style.width = canvasSize + "px";
-      document.getElementById("unity-canvas").style.height = canvasSize + "px";
+      var canvasWidth = 960;
+      var canvasHeiht = 960;
+      // landscape mode
+      if (innerWidth > innerHeight) {
+        canvasWidth = innerWidth - 20;
+        canvasHeight = innerHeight - 20;
+      }
+      // portrait mode
+      else {
+        canvasWidth = innerWidth - 20;
+        canvasHeight = (innerWidth - 20) * 1.5;
+      }
+      document.getElementById("unity-canvas").style.width = canvasWidth + "px";
+      document.getElementById("unity-canvas").style.height = canvasHeight + "px";
     </script>
     <script src="Build/v220721.loader.js"></script>
     <script>
