@@ -3,15 +3,23 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>3D Orbit | 220722-1705</title>
+    <title>3D Orbit | 220722-1720</title>
   </head>
   <body style="text-align: center">
     <canvas id="unity-canvas"></canvas>
     <script>
         var canvasWidth = innerWidth;
         var canvasHeight = innerHeight;
-        document.getElementById("unity-canvas").style.width = canvasWidth - 20 + "px";
-        document.getElementById("unity-canvas").style.height = 960 + "px";
+        if (innerWidth > innerHeight)
+        {
+          document.getElementById("unity-canvas").style.width = canvasHeight - 20 + "px";
+          document.getElementById("unity-canvas").style.height = canvasHeight - 20 + "px";
+        }
+        else
+        {
+          document.getElementById("unity-canvas").style.width = canvasWidth - 20 + "px";
+          document.getElementById("unity-canvas").style.height = canvasWidth - 20 + "px";
+        }
     </script>
     <script src="Build/v220721.loader.js"></script>
     <script>
