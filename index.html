@@ -3,13 +3,13 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>3D Orbit | 220722-1845</title>
+    <title>3D Orbit | 220723-1115</title>
   </head>
   <body style="text-align: center">
     <canvas id="unity-canvas"></canvas>
     <script>
-      var canvasWidth = 960;
-      var canvasHeiht = 960;
+      var canvasWidth = 1080;
+      var canvasHeiht = 1080;
       // landscape mode
       if (innerWidth > innerHeight) {
         canvasWidth = innerWidth - 20;
@@ -18,7 +18,7 @@
       // portrait mode
       else {
         canvasWidth = innerWidth - 20;
-        canvasHeight = (innerWidth - 20) * 1.5;
+        canvasHeight = (innerWidth - 20) * 1.667;
       }
       document.getElementById("unity-canvas").style.width = canvasWidth + "px";
       document.getElementById("unity-canvas").style.height = canvasHeight + "px";
